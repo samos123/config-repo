@@ -1,0 +1,9 @@
+kind: ClusterSelector
+apiVersion: configmanagement.gke.io/v1
+metadata:
+  name: selector-env-remote
+spec:
+  selector:
+    matchLabels:
+      env: remote
+      lifecycle: prod
